@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeel Riasat | Login Page | Template</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon/logo.png">
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+    
+    <!--Start Main Container-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+
+                <div class="imglogo">
+                    <img src="img/logo/adeel-riasat-logo.png" id="imglogo" />
+                </div>
+
+                <div class="loginform" id="loginform">
+
+                    <form>
+                        <input type="email" placeholder="Enter your email address" name="email" id="email" autocomplete="on" required/>
+                        <input type="password" placeholder="Enter your Password" minlength="8"  name="password" id="password" autocomplete="on" required/>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="showPassword" name="checkbox" />
+                            <label for="showPassword">Show Password</label>
+                            <div class="forgetpass">Forget Password?</div>
+                        </div>
+                        <input type="submit" value="Log In" name="submit" id="submit" />
+
+                    </form>
+
+                    <div class="apistructure">
+                        <div id="g_id_onload"
+                            data-client_id="YOUR_CLIENT_ID"
+                            data-callback="handleCredentialResponse">
+                        </div>
+                        <div class="g_id_signin"
+                            data-type="standard"
+                            data-size="large"
+                            data-theme="outline"
+                            data-text="sign_in_with"
+                            data-shape="rectangular"
+                            data-logo_alignment="left">
+                        </div>
+                    </div>
+
+                    <div class="hrmain">
+                        <hr/>
+                    </div>
+
+                    <div class="createacc">
+                        Create an <u id="transformregister">Account</u>
+                    </div>
+                    
+
+                </div>
+
+
+
+            </div>
+            <div class="col-1">
+
+                <div class="img">
+                    <img src="img/logo/adeel-riasat-logo.png"/>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="copyrightdesign">
+                    Copyright © Adeel Riasat 2025. Designed By Adeel Riasat.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--End Main Container-->
+
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

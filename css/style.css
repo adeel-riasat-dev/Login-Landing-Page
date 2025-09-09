@@ -1,0 +1,457 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: 
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("../img/bg/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@font-face {
+    font-family: 'Zona Pro';
+    src: url('../fonts/ZonaPro-Bold.woff2') format('woff2'),
+        url('../fonts/ZonaPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zona Pro';
+    src: url('../fonts/ZonaPro-Thin.woff2') format('woff2'),
+        url('../fonts/ZonaPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.container {
+    width: 85%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -50%); 
+    height: 85%;
+    background: rgba(50, 65, 94, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-150%, -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+#imglogo {
+    width: 30%;
+    opacity: 0;
+    transform: translateX(-150%);
+    animation: logoSlide 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes logoSlide {
+    from {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.row {
+    width: 100%;
+    overflow: hidden;
+}
+
+.col-1 {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.imglogo {
+    width: 85%;
+    overflow: hidden;
+    text-align: center;
+    margin:0px auto;
+}
+
+.loginform {
+    width:85%;
+    overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.loginform form > input {
+    width:65%;
+    padding:15px 20px;
+    font-size:23px;
+    outline: none;
+    background:none;
+    border:1px solid #ffffff;
+    border-radius:5px;
+    color:#ffffff;
+    font-family: 'Zona Pro';
+    animation: InputSlide 1.1s ease-out forwards;
+    animation-delay: 1.1s;
+    opacity: 0;
+    transform: translateX(-150%);
+    caret-color: #3fbff0;
+}
+
+.loginform form > input:nth-child(2) {
+    margin:25px 0px 0px 0px;
+    transform: translateX(-150%);
+    animation: InputSlide 1.2s ease-out forwards;
+    animation-delay: 1.2s;
+
+}
+
+.loginform form > input:focus {
+    border-color: #3fbff0;
+}
+
+.loginform form > input::selection {
+    background: #3fbff0;
+}
+
+.loginform form > input::-moz-selection {
+    background: #3fbff0;
+}
+
+.loginform form > input::placeholder {
+    color:#ffffff;
+    text-transform: capitalize;
+    font-family: 'Zona Pro';
+}
+
+@keyframes InputSlide {
+    from {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.checkbox-wrap {
+    width:72%;
+    overflow:hidden;
+    margin:25px auto 0px auto;
+    display: flex;
+    animation: checkboxSlide 1.1s ease-out forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+    transform: translateX(-150%);
+}
+
+.checkbox-wrap input {
+    width: 24px!important;
+    height: 24px;
+    accent-color: #3fbff0; 
+    cursor: pointer;
+}
+
+.checkbox-wrap label {
+    font-size:23px;
+    color:white;
+    font-family: 'Zona Pro';
+    margin:2px 0px 0px 10px;
+
+}
+
+@keyframes checkboxSlide {
+    from {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#submit {
+    width:20%;
+    margin: 25px 0px 0px 0px;
+    cursor: pointer;
+    animation: checkboxSlide 1.4s ease-out forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
+    transform: translateX(-150%);
+    font-weight: bold;
+}
+
+#submit:hover {
+    border: 2px solid #ffffff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+
+}
+
+.apistructure {
+    width:30%;
+    margin: 25px auto 0px auto;
+    animation: checkboxSlide 1.4s ease-out forwards;
+    animation-delay: 1.5s;
+    opacity: 0;
+    transform: translateX(-150%);
+}
+
+.forgetpass {
+    margin:5px 0px 0px 113px;
+    font-family: 'Zona Pro';
+    color:#ffffff;
+    cursor: pointer;
+}
+
+.forgetpass:hover {
+    text-decoration: underline;
+}
+
+.hrmain {
+    width:70%;
+    margin:25px auto 0px auto;
+    animation: checkboxSlide 1.5s ease-out forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    transform: translateX(-150%);
+}
+
+.createacc {
+    color:#ffffff;
+    font-family: 'Zona Pro';
+    margin:25px auto 0px auto;
+    animation: checkboxSlide 1.6s ease-out forwards;
+    animation-delay: 1.7s;
+    opacity: 0;
+    transform: translateX(-150%);
+}
+
+.createacc u {
+    cursor: pointer;
+}
+
+.col {
+    width:100%;
+    float:left;
+    overflow:hidden;
+}
+
+.copyrightdesign {
+    width: 100%;
+    font-family: 'Zona Pro';
+    animation: checkboxSlide 1.7s ease-out forwards;
+    animation-delay: 1.8s;
+    opacity: 0;
+    transform: translateX(-150%);
+    color: #ffffff;
+    position: fixed;
+    bottom:10px;
+    left: 35%;
+}
+
+.img {
+    text-align: center;
+    width: 100%;
+
+}
+
+.img img {
+    width: 80%;
+    margin: 80px 70px 0px 0px;
+    opacity: 0;
+    transform: translateX(150%) rotateY(0deg);
+    animation: logoall 1.7s ease-out forwards, spinY 5s linear infinite;
+    animation-delay: 1.8s, 3s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+@keyframes logoall {
+    from {
+        transform: translateX(150%) rotateY(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes spinY {
+    from {
+        transform: translateX(0) rotateY(0deg);
+    }
+    to {
+        transform: translateX(0) rotateY(360deg);
+    }
+}
+
+@media only screen and (max-width: 1169px) {
+
+    #imglogo {
+    width: 38%!important;
+    }
+
+}
+
+@media only screen and (max-width: 863px) {
+
+    #imglogo {
+    width: 50%!important;
+    }
+
+    .col-1  {
+        width:100%!important;
+    }
+
+    .img img {
+        display:none!important;
+    }
+    
+    #imglogo {
+        animation:  logoSlide 1s ease-out forwards, spinY 5s linear infinite!important;
+        animation-delay: 1.8s, 3s!important;
+        transform-style: preserve-3d!important;
+        perspective: 1000px!important;
+    }
+
+}
+
+@media only screen and (max-width: 1872px) {
+
+    .checkbox-wrap {
+        width: 86%!important;
+    }
+
+    .loginform form > input {
+        width: 79%!important;
+        font-size: 19px!important;
+    }
+
+    .forgetpass {
+        margin: 5px 0px 0px 206px!important;
+    }
+
+    #submit {
+    width: 30% !important;
+    }
+
+    .checkbox-wrap label {
+    font-size: 19px!important;
+    }
+
+    .loginform  {
+        width:100%!important;
+    }
+
+}
+
+@media only screen and (max-width: 1460px)  {
+
+    .apistructure {
+        width:40%!important;
+    }
+
+    #submit {
+        width: 40% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1160px)  {
+
+    .forgetpass {
+        margin: 5px 0px 0px 108px !important;
+    }
+
+    .copyrightdesign {
+        left:29%!important;
+    }
+
+}
+
+@media only screen and (max-width: 1000px)  {
+
+    .apistructure {
+        width:51%!important;
+    }
+
+    #submit {
+        width: 51% !important;
+    }
+
+    .copyrightdesign {
+        left: 21% !important;
+        font-size:14px!important;
+    }
+
+}
+
+@media only screen and (max-width: 702px)  {
+
+    .copyrightdesign {
+        left: 21% !important;
+        font-size: 11px !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 511px)  {
+
+    .copyrightdesign {
+        left: 15% !important;
+        font-size: 9px !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 394px)  {
+
+    .copyrightdesign {
+        left: 12% !important;
+        font-size: 9px !important;
+    }
+
+        .forgetpass {
+        margin: 5px 0px 0px 57px !important;
+    }
+
+
+}
+
+
+
+
+
